@@ -46,4 +46,21 @@ console.log(betweenFiveAndTwenty(5));
 console.log(betweenFiveAndTwenty(100));
 
 //5
-sumOfThreeOrFive = () => {};
+sumOfThreeOrFive = () => {
+  let sum = 0;
+  for (let i = 1; i < 1000; i++) {
+    if (i % 3 === 0 || i % 5 == 0) {
+      console.log((sum += i));
+    }
+  }
+};
+sumOfThreeOrFive();
+
+//6
+isAllLowerCase = (str) => {
+  return str.toLowerCase() === str;
+};
+
+console.log(isAllLowerCase("hello"));
+console.log(isAllLowerCase("seven eleven"));
+console.log(isAllLowerCase("Seven eleven has the best slushies"));
